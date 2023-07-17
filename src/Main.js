@@ -1,25 +1,25 @@
 import React from 'react';
 
-// import { CardDeck } from './CardDeck';
+import { Carousel } from './Carousel';
 import { ContactForm } from './ContactForm';
 
 export const Main = () => {
   return (
     <div>
       {/* <CardDeck /> */}
-      <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-          <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      <section className="bg-white dark:bg-gray-900">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Lets plan your next big meal!
           </h1>
-          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
             With over 16 years of experience in fine dining cooking, I possess a
             wealth of culinary expertise and a deep passion for creating
             exceptional dining experiences. As your private chef, I can curate
             exquisite meals tailored to your preferences, ensuring each dish is
             a harmonious blend of flavors, textures, and presentation.
           </p>
-          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
             Drawing inspiration from a diverse range of culinary traditions and
             utilizing the finest ingredients, I will design a customized menu
             that reflects your tastes and dietary requirements. Whether you have
@@ -27,7 +27,7 @@ export const Main = () => {
             vibrant vegetarian creations, I will meticulously craft each course
             to delight your palate.
           </p>
-          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
             In addition to my culinary skills, I bring a high level of
             professionalism, attention to detail, and commitment to excellence.
             I will work closely with you to understand your desires, taking into
@@ -42,13 +42,13 @@ export const Main = () => {
             culinary moments that will tantalize your taste buds, leaving a
             lasting impression.
           </p>
-          <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a
               href="#"
-              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
               Get started
               <svg
-                class="w-3.5 h-3.5 ml-2"
+                className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -64,12 +64,13 @@ export const Main = () => {
             </a>
             <a
               href="#"
-              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
               Learn more
             </a>
           </div>
         </div>
       </section>
+      <Carousel />
       <ContactForm />
     </div>
   );
